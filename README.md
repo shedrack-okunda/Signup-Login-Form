@@ -1,0 +1,3 @@
+A Signup, Login and reset password form.
+This form allows you to create an account for the first time by entering your credentials and also you can create that account using your social media accounts. You can also login to your account if you have already created one. Incase you have forgotten your password worry no more since you can reset your password and change it to the one that you will not forget.
+If you don't provide any details in the form input fields and try to submit, it will prompt to you an inline message telling you that the fields cannot be empty meaning you cannot submit a form with empty input fields.
