@@ -1,0 +1,234 @@
+* {
+ margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+   height: 100vh;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #280C49;
+   column-gap: 25px;
+}
+
+small {
+    font-size: 12px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-group small {
+    color: #E74C3C;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    visibility: hidden;
+}
+
+.form-group.error small {
+    visibility: visible;
+}
+
+.form {
+    position: absolute;
+    max-width: 450px;
+    width: 100%;
+    padding: 30px 40px;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+/* Social proof */
+.social-icons {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.social-icons img {
+    display: block;
+    border-radius: 50%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    text-align: center;
+    border: 1px solid #280C49;
+    border-radius: 20px;
+    padding: 5px 15px;
+    gap: 15px;
+}
+
+.social-item:hover {
+    cursor: pointer;
+}
+
+.form-group input {
+    font-family: inherit;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #F5F;
+    height: 40px;
+    width: 100%;
+}
+
+.facebook {
+    background-color: #4267B2;
+    color: #FFF;
+    border: #4267B2;
+}
+
+.facebook img {
+    mix-blend-mode: lighten;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+    border: #0171D3;
+    color: #FFF;
+}
+
+.login {
+    display: none;
+}
+
+.forgot-password {
+    display: none;
+}
+
+.form-group input:focus {
+    border-bottom-width: 2px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2B3137;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form .field {
+    position: relative;
+    height: 60px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+
+.form .field1 {
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 5px;
+    border-radius: 6px;
+}
+
+.field input, .field1 button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 6px;
+}
+
+.field input {
+    font-size: 14px;
+    outline: none;
+    padding: 0 15px;
+    border: 1px solid #280C49;
+}
+
+.field input:focus {
+    border-bottom-width: 2px;
+}
+
+.field1 button {
+    color: #fff;
+    background-color: #252C53;
+}
+
+.field1 button:hover {
+    background-color: #140536;
+    cursor: pointer;
+}
+
+.form-link {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.form a {
+    color: #0171D3;
+}
+
+.form-content a:hover {
+    text-decoration: underline;
+}
+
+.pass-show {
+    position: absolute;
+    top: 35%;
+    right: 10px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #280C49;
+    cursor: pointer;
+    padding: 1px;
+}
+
+.line {
+    position: relative;
+    height: 2px;
+    width: 100%;
+    margin: 24px 0;
+    background-color: #280C49;
+}
+
+.line::before {
+    content: "Or";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #2B3137;
+    padding: 0 15px;
+}
+
+@media screen and (max-width: 400px) {
+    .form {
+        padding: 15px 10px;
+    }
+}
